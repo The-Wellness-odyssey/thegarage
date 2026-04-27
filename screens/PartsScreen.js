@@ -11,11 +11,6 @@ export default function PartsScreen() {
   );
 }
 
-// Sets the header title if nested in a stack, though here it just acts as a tab screen
-PartsScreen.navigationOptions = {
-  title: 'Parts Inventory',
-};
-
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 20, backgroundColor: '#fff' },
   title: { fontSize: 24, fontWeight: 'bold', marginBottom: 20 },

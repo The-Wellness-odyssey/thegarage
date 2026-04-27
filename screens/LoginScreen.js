@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
-export default function LoginScreen(props) {
+export default function LoginScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>The Garage</Text>
       <Button
         title="Open Bay Doors"
-        onPress={() => props.navigation.navigate('Main')}
+        onPress={() => navigation.replace('Main')}
       />
     </View>
   );
